@@ -263,15 +263,52 @@ h1 {
   text-transform: uppercase;
 }
 
-.contact a {
+.contact a,
+footer .email-link {
   color: #a1a1a1;
   text-decoration: none;
   font-weight: 200;
   transition: all 0.2s ease-in-out;
 }
 
-.contact a:hover {
+.contact a:hover,
+footer .email-link:hover {
+  color: #a1a1a1;
   border-bottom: 4px solid #e9cf76;
+}
+
+footer {
+  padding: 50px;
+  background-color: #1c2023;
+  text-align: center;
+  opacity: 0.7;
+}
+
+footer h6 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  letter-spacing: 0.1rem;
+}
+
+footer .social-link {
+  display: block;
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin-bottom: 30px;
+}
+
+footer p {
+  margin: 0;
+  opacity: 0.6;
+}
+
+footer p a {
+  text-decoration: none;
+}
+
+footer p a:hover {
+  color: #e9cf76;
+  opacity: 1;
 }
 
 .highlight {
@@ -543,6 +580,24 @@ h1 {
 
   .contents h4 {
     font-size: 1em;
+  }
+
+  footer {
+    padding: 30px;
+  }
+
+  footer h6 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+
+  footer .social-link {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+
+  footer p {
+    font-size: 0.8rem;
   }
 }
 
