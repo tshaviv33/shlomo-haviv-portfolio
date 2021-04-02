@@ -10,6 +10,64 @@ body {
   color: #a1a1a1;
 }
 
+.main-nav {
+  background-color: #1c2023;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+}
+
+.main-nav nav {
+  margin: 0 auto;
+  padding: 10px;
+  max-width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav h6 {
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav a {
+  color: #a1a1a1;
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.main-nav ul {
+  margin: 0;
+  display: flex;
+  list-style: none;
+}
+
+.main-nav li {
+  margin-left: 25px;
+  font-weight: 200;
+  transition: all 0.2s ease-in-out;
+}
+
+.main-nav li a {
+  transition: all 0.2s ease-in-out;
+}
+
+.main-nav li a:hover {
+  border-bottom: 4px solid #e9cf76;
+}
+
+.active a {
+  font-weight: 400;
+  color: #e9cf76;
+}
+
+.main-nav li.active a:hover {
+  border-bottom: none;
+}
+
 .hero {
   width: 100%;
   background-color: #1c2023;
@@ -17,6 +75,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 31.25rem;
+  padding-top: 70px;
 }
 
 .hero-content {
@@ -110,14 +169,18 @@ h1 {
 }
 
 .about-section {
+  /* border: 2px solid red; */
   height: 40rem;
   background-color: #1c2023;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 0;
 }
 
 .about-row {
+  /* border: 2px solid yellow; */
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -152,7 +215,7 @@ h1 {
 }
 
 .about-content p {
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.5rem;
   font-weight: 300;
   margin: 0 0 45px 0;
@@ -308,8 +371,16 @@ h1 {
 }
 
 @media (max-width: 768px) {
+  .main-nav h6 {
+    font-size: 1.3rem;
+  }
+
+  .main-nav li {
+    font-size: 0.8rem;
+  }
+
   .about-section {
-    height: 30rem;
+    height: 33rem;
   }
 
   .about-row {
@@ -374,6 +445,10 @@ h1 {
 }
 
 @media (max-width: 626px) {
+  .main-nav li {
+    margin-left: 10px;
+  }
+
   .about-section {
     height: 35rem;
   }
@@ -388,7 +463,21 @@ h1 {
   }
 }
 
+@media (max-width: 486px) {
+  .about-section {
+    height: 40rem;
+  }
+}
+
 @media (max-width: 461px) {
+  .main-nav nav {
+    justify-content: center;
+  }
+
+  .main-nav h6 {
+    font-size: 1rem;
+  }
+
   .about-section {
     height: 40rem;
   }
@@ -396,12 +485,6 @@ h1 {
   .about-content h1 {
     font-size: 2rem;
     line-height: 3rem;
-  }
-}
-
-@media (max-width: 486px) {
-  .about-section {
-    height: 40rem;
   }
 }
 
