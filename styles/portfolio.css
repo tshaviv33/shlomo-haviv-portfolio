@@ -159,32 +159,56 @@ h1 {
   opacity: 0.7;
 }
 
-.work h3 {
+.header h3 {
   font-size: 2.3rem;
   letter-spacing: 0.15rem;
   opacity: 0.8;
 }
 
-.work-section h4 {
+.contents h4 {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 300;
   text-align: center;
   margin: 50px 0 -30px 0;
 }
 
-.work-section .photo-row {
+.contents .photo-row {
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.work-section button {
+.contents button {
   margin: 10px;
   border: none;
   background-color: transparent;
 }
 
-.work-section img {
+.contents img {
   margin: 0;
+}
+
+.contact {
+  margin: 50px;
+  text-align: center;
+}
+
+.contact h5 {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  margin: 20px 0 0 0;
+  opacity: 0.7;
+  text-transform: uppercase;
+}
+
+.contact a {
+  color: #a1a1a1;
+  text-decoration: none;
+  font-weight: 200;
+  transition: all 0.2s ease-in-out;
+}
+
+.contact a:hover {
+  border-bottom: 4px solid #e9cf76;
 }
 
 .highlight {
@@ -214,7 +238,7 @@ h1 {
     margin: 30px auto;
   }
 
-  .work-section .photo-container {
+  .contents .photo-container {
     margin: 50px auto;
   }
 
@@ -223,7 +247,7 @@ h1 {
     max-width: 100%;
   }
 
-  .work-section img {
+  .contents img {
     height: 200px;
     max-width: 100%;
   }
@@ -332,12 +356,20 @@ h1 {
     line-height: 1.0625rem;
   }
 
-  .work h3 {
+  .header h3 {
     font-size: 1.8rem;
   }
 
-  .work-section h4 {
-    font-size: 1.2em;
+  .about-section {
+    height: 32rem;
+  }
+
+  .contents h4 {
+    font-size: 1.2rem;
+  }
+
+  .contact h5 {
+    font-size: 1.1rem;
   }
 }
 
@@ -346,11 +378,11 @@ h1 {
     height: 35rem;
   }
 
-  .work-section .photo-container {
+  .contents .photo-container {
     overflow: visible;
   }
 
-  .work-section img {
+  .contents img {
     height: 150px;
     max-width: initial;
   }
@@ -364,6 +396,22 @@ h1 {
   .about-content h1 {
     font-size: 2rem;
     line-height: 3rem;
+  }
+}
+
+@media (max-width: 486px) {
+  .about-section {
+    height: 40rem;
+  }
+}
+
+@media (max-width: 417px) {
+  .about-section {
+    height: 43rem;
+  }
+
+  .about-content h1 {
+    font-size: 1.8rem;
   }
 }
 
@@ -394,6 +442,10 @@ h1 {
     line-height: 1.0625rem;
   }
 
+  .about-section {
+    height: 35rem;
+  }
+
   .about-row {
     max-width: 100%;
   }
@@ -402,11 +454,38 @@ h1 {
     height: 15rem;
   }
 
-  .work h3 {
+  .header h3 {
     font-size: 1.3rem;
   }
 
-  .work-section h4 {
+  .contents h4 {
     font-size: 1em;
+  }
+}
+
+@media (max-width: 381px) {
+  .about-section {
+    height: 40rem;
+  }
+
+  .header {
+    height: 20rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .about-section {
+    height: 45rem;
+  }
+}
+
+@media (max-width: 280px) {
+  .about-section {
+    height: 50rem;
+  }
+
+  .about-content h1 {
+    font-size: 1.4rem;
+    line-height: 3rem;
   }
 }
