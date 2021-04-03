@@ -49,23 +49,46 @@
         <h3 class="highlight mt-5">Contact Me</h3>
       </div>
     </div>
-    <div class="contents container">
+    <div class="contact container">
       <h4>Please let me know what you think!</h4>
-      <div class="contact">
-        <h5 class="highlight">Email</h5>
-        <a href="mailto:tshaviv33@gmail.com" title="Email Shlomo"
-          >shlomo.o.haviv@gmail.com</a
-        >
-        <h5 class="highlight">Instagram</h5>
-        <a
-          href="https://www.instagram.com/shlomohaviv/"
-          target="_blank"
-          title="Instagram Profile"
-          >@shlomohaviv</a
-        >
-      </div>
+      <form action="https://formspree.io/f/xjvjvkzw" method="POST">
+        <div>
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" name="first-name" required />
+        </div>
+        <div>
+          <label for="last-name">Last Name:</label>
+          <input type="text" id="last-name" name="last-name" />
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" required />
+        </div>
+        <div>
+          <label for="comments">Comments:</label>
+          <textarea name="comments" id="comments" rows="5" required></textarea>
+        </div>
+        <div>
+          <button type="submit" class="submit-button">Submit</button>
+        </div>
+      </form>
     </div>
     <footer>
+      <h6>
+        <a
+          href="mailto:tshaviv33@gmail.com"
+          class="email-link"
+          title="Email Shlomo"
+          >shlomo.o.haviv@gmail.com</a
+        >
+      </h6>
+      <a
+        href="https://www.instagram.com/shlomohaviv/"
+        class="social-link"
+        target="_blank"
+        title="Instagram Profile"
+        ><i class="fab fa-instagram highlight"></i
+      ></a>
       <p>
         Coded by Talia Haviv, open-sourced on
         <a
